@@ -1,0 +1,18 @@
+<h2>Exemplos de ngFor</h2>
+
+<ul >
+  <li *ngFor="let estado of estados; let i = index">
+    <strong>{{estado}}</strong> - {{i}}
+  </li>
+</ul>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Nota</th>
+  </tr>
+  <tr *ngFor="let jogo of jogos; let i = index">
+    <td>{{jogo}}</td>
+    <td>{{notas[i]}}</td>
+  </tr>
+</table>

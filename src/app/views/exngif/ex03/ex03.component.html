@@ -1,0 +1,17 @@
+<h2>Ex 03</h2>
+
+<select [(ngModel)]="tipoContato" >
+  <option label="Escolha uma opção" value=""></option>
+  <option label="Email" value="email"></option>
+  <option label="Whatsapp" value="whatsapp"></option>
+</select>
+
+<div *ngIf=" tipoContato == 'email' ">
+  <label for="Email">Email: </label>
+  <input type="email" name="email" id="email" [(ngModel)]="email">
+</div>
+
+<div *ngIf=" tipoContato == 'whatsapp' ">
+  <label for="Zapzap">Zapzap: </label>
+  <input type="tel" name="whatsapp" id="whatsapp" [(ngModel)]="whats">
+</div>

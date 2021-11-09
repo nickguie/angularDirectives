@@ -1,0 +1,9 @@
+<h2>Exercicio 02 - ngFor</h2>
+
+<div>
+  <ul>
+    <li *ngFor="let pais of paises; let i = index" (click)="exibirCapital(i)">
+      {{pais}}
+    </li>
+  </ul>
+</div>

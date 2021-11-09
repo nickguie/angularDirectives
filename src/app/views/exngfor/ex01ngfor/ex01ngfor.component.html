@@ -1,0 +1,6 @@
+<h2>Exercicio 01 - ngFor</h2>
+
+<div *ngFor=" let img of imgs; let i = index">
+  <h4 style="color: white;">Imagem {{i+1}}</h4>
+  <img (click)="exibirNome(img)" src="assets/{{img}}" alt="" width="300px" >
+</div>
